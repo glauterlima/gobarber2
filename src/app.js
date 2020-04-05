@@ -1,5 +1,5 @@
-const express = require('express');
-const routes = require('./routes');
+import express from 'express';
+import routes from './routes';
 
 class App {
   constructor() { //classe carregada 
@@ -18,4 +18,4 @@ class App {
   }
 }
 
-module.exports = new App().server; //Estância de App e método disponível
+export default new App().server; //Estância de App e método disponível
