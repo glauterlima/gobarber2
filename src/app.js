@@ -2,7 +2,8 @@ import express from 'express';
 import routes from './routes';
 
 class App {
-  constructor() { //classe carregada 
+  constructor() {
+    // classe carregada
     this.server = express();
 
     this.middlewares();
@@ -18,4 +19,4 @@ class App {
   }
 }
 
-export default new App().server; //Estância de App e método disponível
+export default new App().server; // Estância de App e método disponível
